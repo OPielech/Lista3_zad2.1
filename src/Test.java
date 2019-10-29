@@ -29,14 +29,15 @@ public class Test {
         System.out.println(e5.toString());
         System.out.printf("%.2f\n", e5.earnings());
 
-        staff.add(e1);
-        staff.add(e2);
-        staff.add(e3);
-        staff.add(e4);
-        staff.add(e5);
+        staff.addToList(e1);
+        staff.addToList(e2);
+        staff.addToList(e3);
+        staff.addToList(e4);
+        staff.addToList(e5);
 
         staff.printList();
-//        staff.printSeniority();
+        staff.printSeniority();
+        staff.printWeeklySalary();
 
 
     }//end of main

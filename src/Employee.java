@@ -3,9 +3,9 @@ import java.time.Month;
 import java.time.temporal.ChronoUnit;
 
 public class Employee {
-    private String name;
-    private String surname;
-    private LocalDate dateOfEmployment;
+    private final String name;
+    private final String surname;
+    private final LocalDate dateOfEmployment;
     private final int id;
 
     public Employee(String name, String surname, LocalDate dateOfEmployment, int id) {
@@ -19,24 +19,12 @@ public class Employee {
         return name;
     }
 
-    public void setName(String name) {
-        this.name = name;
-    }
-
     public String getSurname() {
         return surname;
     }
 
-    public void setSurname(String surname) {
-        this.surname = surname;
-    }
-
     public LocalDate getDateOfEmployment() {
         return dateOfEmployment;
-    }
-
-    public void setDateOfEmployment(LocalDate dateOfEmployment) {
-        this.dateOfEmployment = dateOfEmployment;
     }
 
     public int getId() {
@@ -56,6 +44,10 @@ public class Employee {
         LocalDate now = LocalDate.now();
         return dateOfEmployment.until(now, ChronoUnit.DAYS);
     }//end of seniority
+
+    public double weeklySalary() {
+        return 0;
+    }//end of weeklySalary
 
 
 }//end of Employee

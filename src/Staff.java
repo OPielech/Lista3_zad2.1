@@ -4,7 +4,7 @@ import java.util.ArrayList;
 public class Staff {
     private ArrayList<Employee> list = new ArrayList();
 
-    public void add(Employee employee) {
+    public void addToList(Employee employee) {
         list.add(employee);
     }//end of addToList
 
@@ -32,14 +32,14 @@ public class Staff {
         }//end of for
     }//end of printSeniority
 
-//    public void printWeeklySalary(){
-//        int i=1;
-//        for (Employee employee:list) {
-//            if (list.contains("Salary:")||list.contains())
-//            System.out.println("Employee " + (i) + ":");
-//            System.out.println(employee.);
-//            System.out.println();
-//            i++;
-//        }//end of for
-//    }//end of printWeeklySalary
+    public void printWeeklySalary(){
+        int i=1;
+        for (Employee employee:list) {
+            if (employee instanceof SalariedEmployee ||employee instanceof BasePlusCommissionEmployee) {
+                System.out.println("Employee " + (i) + ":");
+                System.out.printf("Weekly salary: %.2f\n",employee.weeklySalary());
+                i++;
+            }//end of if
+        }//end of for
+    }//end of printWeeklySalary
 }//end of class

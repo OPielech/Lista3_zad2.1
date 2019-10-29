@@ -18,7 +18,7 @@ public class SalariedEmployee extends Employee {
     public void setSalary(double salary) {
         this.salary = salary;
     }
-
+    @Override
     public double weeklySalary() {
         return (getSalary() / 30) * 7;
     }//end of weeklySalary

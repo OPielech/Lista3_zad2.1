@@ -49,6 +49,11 @@ public class BasePlusCommissionEmployee extends Employee {
         this.baseSalary = baseSalary;
     }
 
+    @Override
+    public double weeklySalary() {
+        return (getBaseSalary() / 30) * 7;
+    }//end of weeklySalary
+
     public double earnings() {
         return ((getBaseSalary() / 30) * 7) + getProvision() * getTotalSaleAmount();
     }//end of earnings
