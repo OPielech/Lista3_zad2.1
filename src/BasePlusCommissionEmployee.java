@@ -55,7 +55,7 @@ public class BasePlusCommissionEmployee extends Employee {
     }//end of weeklySalary
 
     public double earnings() {
-        return ((getBaseSalary() / 30) * 7) + getProvision() * getTotalSaleAmount();
+        return (weeklySalary() + getProvision() * getTotalSaleAmount());
     }//end of earnings
 
     @Override

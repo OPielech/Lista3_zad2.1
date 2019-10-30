@@ -1,4 +1,3 @@
-import java.time.LocalDate;
 import java.util.ArrayList;
 
 public class Staff {
@@ -32,12 +31,12 @@ public class Staff {
         }//end of for
     }//end of printSeniority
 
-    public void printWeeklySalary(){
-        int i=1;
-        for (Employee employee:list) {
-            if (employee instanceof SalariedEmployee ||employee instanceof BasePlusCommissionEmployee) {
+    public void printWeeklySalary() {
+        int i = 1;
+        for (Employee employee : list) {
+            if (employee instanceof SalariedEmployee || employee instanceof BasePlusCommissionEmployee) {
                 System.out.println("Employee " + (i) + ":");
-                System.out.printf("Weekly salary: %.2f\n",employee.weeklySalary());
+                System.out.printf("Weekly salary: %.2f\n", employee.weeklySalary());
                 i++;
             }//end of if
         }//end of for

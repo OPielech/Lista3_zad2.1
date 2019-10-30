@@ -1,5 +1,4 @@
 import java.time.LocalDate;
-import java.time.Month;
 import java.time.temporal.ChronoUnit;
 
 public class Employee {
@@ -48,6 +47,4 @@ public class Employee {
     public double weeklySalary() {
         return 0;
     }//end of weeklySalary
-
-
-}//end of Employee
+}//end of class
